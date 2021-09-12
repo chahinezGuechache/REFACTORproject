@@ -1,1 +1,4 @@
 docker-compose up
+
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+docker push project_backend_user_1
